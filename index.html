@@ -1,0 +1,42 @@
+<html>
+<head>
+
+	<title>AI OBJECT FINDER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Otomanopee+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Otomanopee+One&family=Tourney:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Lobster+Two&family=Otomanopee+One&family=Tourney:wght@600&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="main.js"></script>
+</head>
+
+<body background="R.jpg">
+<center>
+<h1 class="btn btn-warning" style="background:rgb(3, 155, 237); color: white;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 25px;border: 0px;"> AI OBJECT FINDER </h1>
+<br> <br>
+<h3 style="color: white;font-family: 'Tourney', cursive; font-size: 29px;">Object name:</h3>
+<br>
+<input placeholder="Enter object that you want to find" id="inputObject">
+<br> <br>
+<button id="startBtn" onclick="start()" class="btn btn-info" style="background-color: white;font-size: 19px; border: 2px solid black; border-radius: 10px;font-family:'Times New Roman', Times, serif;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: rgb(3, 155, 237);"> Start </button>
+<br> 
+<h3 id="no_objects" class="btn btn-warning" style="background-color:rgb(3, 155, 237); font-size: 18px;color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;border-radius: 100px;border: 1px solid white;"> No. of objects detected: </h3> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+<h3 id="status" class="btn btn-warning" style="background-color:rgb(3, 155, 237); font-size: 18px;color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;border-radius: 100px;border: 1px solid white">Status:  </h3>
+<div id="copy_right_footer">
+  Developed by Yashwant Yerra from Whitehat Jr.
+</div>
+</center>
+</body>
+
+</html>
